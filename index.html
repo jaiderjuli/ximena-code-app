@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Vas a ir este sábado al culto de jóvenes?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="titlep">¿Vas a ir este sábado al culto de jóvenes?</h1>
+  <img
+    src="https://img.freepik.com/vector-premium/mujer-negra-anuncio-megafono_112255-4653.jpg"
+    alt="Foto D My"
+    style="width: 400px; border-radius: 50%"
+  />
+  <br />
+  <div class="button">
+    <button id="yes">😉Si😉</button>
+    <button id="no">😒No😒</button>
+  </div>
+  <br />
+  <div class="list-tab">
+    <h2>Lista de Personas que Asistirán</h2>
+  </div>
+  
+  <ul id="listaNombres"></ul>
+
+  
+<button class="btni" id="btnAbrirModal">Agregar Persona</button>
+
+
+<div id="modalAgregarPersona" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar" id="btnCerrarModal">&times;</span>
+    <h2>Ingresa Tu Nombre</h2>
+    <form id="formulario">
+      <input type="text" id="nombre" placeholder="Nombre" required>
+      <input type="text" id="telefono" placeholder="Número de Celular" required>
+      <select id="estado" required>
+        <option value="asistira">Asistirá</option>
+        <option value="no_asistira">No Asistirá</option>
+      </select>
+      <button type="submit">Agregar</button>
+    </form>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+
